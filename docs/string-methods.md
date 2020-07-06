@@ -250,6 +250,13 @@ s.includes('Hello', 6) // false
 'na'.repeat(NaN) // ""
 ```
 
+如果参数是数组、对象、函数效果等同于0。
+```javascript
+'na'.repeat([]) // ""
+'na'.repeat({}) // ""
+'na'.repeat(function(){}) // ""
+```
+
 如果`repeat`的参数是字符串，则会先转换成数字。
 
 ```javascript
